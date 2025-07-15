@@ -1,0 +1,26 @@
+[server]
+port = 17654
+address = "0.0.0.0"
+
+[theme]
+base = "light"
+
+[client]
+showErrorDetails = false
+
+[browser]
+gatherUsageStats = false
+
+[runner]
+magicEnabled = false
+
+[logger]
+level = "info"
+
+[global]
+showWarningOnDirectExecution = false
+
+# Additional settings to clean up the UI
+[server]
+enableXsrfProtection = false
+enableCORS = false

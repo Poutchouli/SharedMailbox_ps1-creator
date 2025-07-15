@@ -23,6 +23,32 @@ shared.mailbox@company.com;john.doe@company.com;Add
 sales@company.com;jane.smith@company.com;Remove
 ```
 
+## Running with Docker
+
+### Using Docker Compose (Recommended)
+
+1. Clone or download this repository
+2. Navigate to the project directory
+3. Run the application:
+   ```bash
+   docker-compose up -d
+   ```
+4. Access the application at http://localhost:17654
+
+### Using Docker directly
+
+1. Build the image:
+   ```bash
+   docker build -t mailbox-script-generator .
+   ```
+
+2. Run the container:
+   ```bash
+   docker run -p 17654:17654 mailbox-script-generator
+   ```
+
+3. Access the application at http://localhost:17654
+
 ## Running Locally
 
 1. Install dependencies:
@@ -34,8 +60,6 @@ sales@company.com;jane.smith@company.com;Remove
    ```bash
    streamlit run app.py
    ```
-
-3. Open your browser and navigate to the URL shown in the terminal (typically http://localhost:8501)
 
 ## Generated PowerShell Script
 
@@ -50,6 +74,7 @@ The generated script will:
 - Python 3.11+
 - Streamlit
 - Pandas
+- Docker (for containerized deployment)
 
 ## License
 
