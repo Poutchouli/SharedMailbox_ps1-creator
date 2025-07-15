@@ -1,6 +1,8 @@
 [server]
 port = 17654
 address = "0.0.0.0"
+enableXsrfProtection = false
+enableCORS = false
 
 [theme]
 base = "light"
@@ -19,8 +21,3 @@ level = "info"
 
 [global]
 showWarningOnDirectExecution = false
-
-# Additional settings to clean up the UI
-[server]
-enableXsrfProtection = false
-enableCORS = false

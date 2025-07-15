@@ -1,0 +1,5 @@
+Identity;User;Action
+shared.mailbox@company.com;john.doe@company.com;Add
+shared.mailbox@company.com;jane.smith@company.com;Add
+sales@company.com;john.doe@company.com;Remove
+marketing@company.com;jane.smith@company.com;Add
