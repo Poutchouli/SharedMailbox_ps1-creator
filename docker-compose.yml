@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mailbox-script-generator:
+    build: .
+    ports:
+      - "17654:17654"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:17654/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
